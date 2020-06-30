@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**NOTE: If this involves a pre-releae version of ComiXed and not a release, then please send an email to the mailing list and don't open a issue here.**
+**NOTE: If this involves a pre-releae version of ComiXed and not a release, then please send an email to the mailing list rather than creating an issue here.**
 
 **Describe the bug**
 A clear and concise description of what the bug is.
