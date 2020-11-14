@@ -1,3 +1,4 @@
+<!--
 <form [formGroup]="loginForm">
   <mat-card class="cx-centered cx-width-50">
     <mat-card-title>{{"user.login-user.page-title"|translate}}</mat-card-title>
@@ -28,3 +29,40 @@
     </mat-card-actions>
   </mat-card>
 </form>
+-->
+
+<div fxLayout='column' fxLayoutAlign="center center">
+  <mat-card fxLayout='column' fxFlexOffset='5%' >
+
+    <mat-card-title>{{"user.login-user.page-title"|translate}}</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]='loginForm'>
+        <div fxLayout='column' fxLayoutAlign="center center" fxLayoutGap='5%' >
+          <mat-form-field fxFlex required>
+            <input matInput
+                   type="email"
+                   formControlName="email"
+                   [placeholder]="'user.login-user.email-placeholder'|translate">
+          </mat-form-field>
+
+          <mat-form-field fxFlex required>
+            <input matInput
+                   type="password"
+                   formControlName="password"
+                   [placeholder]="'user.login-user.password-placeholder'|translate">
+          </mat-form-field>
+
+          <button mat-raised-button
+                  color="primary"
+                  (click)="onSubmitLogin()"
+                  [disabled]="!loginForm.valid">
+            <mat-label>{{"button.login"|translate}}</mat-label>
+            <mat-icon>check</mat-icon>
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+

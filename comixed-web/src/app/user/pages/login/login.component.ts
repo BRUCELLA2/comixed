@@ -24,6 +24,7 @@ import { UserModuleState } from '@app/user';
 import { Subscription } from 'rxjs';
 import { selectUserState } from '@app/user/selectors/user.selectors';
 import { loginUser } from '@app/user/actions/user.actions';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
   selector: 'cx-login',
